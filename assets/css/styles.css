@@ -1,0 +1,120 @@
+---
+---
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/static/FiraCode-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/static/FiraCode-SemiBold.ttf");
+  font-weight: normal;
+  font-style: Bold;
+}
+
+:root {
+  --primary: #dddddd;
+  --secondary: #ffffff;
+  --background: #111111;
+  --syntax-background: #1d1d1d;
+  --syntax-red: #f92672;
+  --syntax-green: #a6e22e;
+  --syntax-blue: #66d9ef;
+  --syntax-yellow: #e6db74;
+  --syntax-purple: #ae81ff;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+             'Segoe UI', Roboto, 'Helvetica Neue', 
+             Ubuntu, Arial, sans-serif;
+
+  
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+[theme="light"] {
+  --primary: #333333;
+  --secondary: #000000;
+  --background: #ffffff;
+  --syntax-background: #f4f4f4;
+  --syntax-red: #f9005a;
+  --syntax-green: #8eca16;
+  --syntax-blue: #1fb7e6;
+  --syntax-yellow: #b9ab27;
+  --syntax-purple: #7e42ee;
+}
+
+
+body {
+  margin-left:10%;
+  margin-right:10%;
+}
+
+
+#theme-toggle {
+  float: right;
+}
+
+.post-title {
+  margin-bottom: 0px;
+}
+
+.post-date {
+  margin-top: 0px;
+  font-size: small;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* colors of stuff */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary)
+}
+
+a {
+  color: #00bbee;
+}
+
+
+/* code box */
+.highlight {
+  border-radius: 10px;
+}
+
+code {
+  font-family: 'Fira Code';
+  font-size: 12;
+}
+
+pre.highlight {
+  padding: 20px;
+}
+
+/* navbar stufff */
+.nav {
+  margin: 0px;
+}
+
+/* stick footer to bottom of page */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 15;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}

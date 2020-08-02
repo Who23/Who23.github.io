@@ -1,0 +1,216 @@
+/** * Syntax highlighting styles */
+.highlight {
+  background: var(--syntax-background);
+}
+.highlight .c {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+.highlight .k {
+  color: var(--syntax-blue);
+}
+.highlight .o {
+  color: var(--syntax-red);
+}
+.highlight .l {
+  color: var(--syntax-purple);
+}
+.highlight .n {
+  color: var(--primary);
+}
+.highlight .p {
+  color: var(--primary);
+}
+.highlight .cm {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .gd {
+  color: var(--syntax-red);
+  background-color: #fdd;
+}
+.highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gr {
+  color: #a00;
+}
+.highlight .gh {
+  color: #999;
+}
+.highlight .gi {
+  color: var(--syntax-green);
+  background-color: #dfd;
+}
+.highlight .gi .x {
+  color: var(--syntax-green);
+  background-color: #afa;
+}
+.highlight .go {
+  color: #888;
+}
+.highlight .gp {
+  color: #555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #75715e;
+}
+.highlight .gt {
+  color: #a00;
+}
+.highlight .kc {
+  color: var(--syntax-blue);
+}
+.highlight .kd {
+  color: var(--syntax-blue);
+}
+.highlight .kn {
+  color: var(--syntax-red);
+}
+.highlight .kp {
+  color: var(--syntax-blue);
+}
+.highlight .kr {
+  color: var(--syntax-blue);
+}
+.highlight .kt {
+  color: var(--syntax-blue);
+}
+.highlight .m {
+  color: var(--syntax-purple);
+}
+.highlight .s {
+  color: var(--syntax-yellow);
+}
+.highlight .ld {
+  color: var(--syntax-yellow);
+}
+.highlight .na {
+  color: var(--syntax-green);
+}
+.highlight .nb {
+  color: var(--primary);
+}
+.highlight .nc {
+  color: var(--syntax-green);
+}
+.highlight .no {
+  color: var(--syntax-blue);
+}
+.highlight .nd {
+  color: var(--syntax-green);
+}
+.highlight .ni {
+  color: var(--primary);
+}
+.highlight .ne {
+  color: var(--syntax-green);
+}
+.highlight .nf {
+  color: var(--syntax-green);
+}
+.highlight .nl {
+  color: var(--primary);
+}
+.highlight .nn {
+  color: var(--primary);
+}
+.highlight .nx {
+  color: var(--syntax-green);
+}
+.highlight .py {
+  color: var(--primary);
+}
+.highlight .nt {
+  color: var(--syntax-red);
+}
+.highlight .nv {
+  color: var(--primary);
+}
+.highlight .ow {
+  color: var(--syntax-red);
+}
+.highlight .w {
+  color: var(--primary);
+}
+.highlight .mf {
+  color: var(--syntax-purple);
+}
+.highlight .mh {
+  color: var(--syntax-purple);
+}
+.highlight .mi {
+  color: var(--syntax-purple);
+}
+.highlight .mo {
+  color: var(--syntax-purple);
+}
+.highlight .sb {
+  color: var(--syntax-yellow);
+}
+.highlight .sc {
+  color: var(--syntax-yellow);
+}
+.highlight .sd {
+  color: var(--syntax-yellow);
+}
+.highlight .s2 {
+  color: var(--syntax-yellow);
+}
+.highlight .se {
+  color: var(--syntax-purple);
+}
+.highlight .sh {
+  color: var(--syntax-yellow);
+}
+.highlight .si {
+  color: var(--syntax-yellow);
+}
+.highlight .sx {
+  color: var(--syntax-yellow);
+}
+.highlight .sr {
+  color: var(--syntax-yellow);
+}
+.highlight .s1 {
+  color: var(--syntax-yellow);
+}
+.highlight .ss {
+  color: var(--syntax-yellow);
+}
+.highlight .bp {
+  color: var(--primary);
+}
+.highlight .vc {
+  color: var(--primary);
+}
+.highlight .vg {
+  color: var(--primary);
+}
+.highlight .vi {
+  color: var(--primary);
+}
+.highlight .il {
+  color: var(--syntax-purple);
+}

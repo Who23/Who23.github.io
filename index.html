@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<main>
+  {% for post in site.posts %}
+  <!-- <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> -->
+    <section>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+      </a>
+      <p class="post-date">{{ post.date | date_to_string: "ordinal", "US" }}</p>
+      <p>{{ post.excerpt | truncatewords: 35 }}</p>
+    </section>
+  {% endfor %}
+</main>

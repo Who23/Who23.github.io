@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
+    <div id="wrapper">
+      <header>
   <p class="nav">
     <a href="/">posts</a>
     <a href="/about">about</a>
@@ -41,17 +42,18 @@
 
   document.getElementById('theme-toggle').addEventListener('click', switchTheme);
 </script>
-    <div class="container-lg px-3 my-5 markdown-body page-container content-wrap">
-      <main>
+      <div class="container-lg px-3 my-5 markdown-body" id="content-wrap">
+        <main>
   
 </main>
 
-    </div>
-    <footer id="footer">
+      </div>
+      <footer id="footer">
   <p>
     <a href="https://github.com/Who23">github</a>
   </p>
 </footer>
 
-    </body>
+    <div>
+  </body>
 </html>

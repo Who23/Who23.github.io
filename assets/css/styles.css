@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: "Fira Code";
-  src: url("../fonts/static/FiraCode-Regular.ttf");
+  src: url("../fonts/FiraCode/static/FiraCode-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fira Code";
-  src: url("../fonts/static/FiraCode-SemiBold.ttf");
+  src: url("../fonts/FiraCode/static/FiraCode-SemiBold.ttf");
   font-weight: normal;
   font-style: Bold;
 }
@@ -18,7 +18,7 @@
 :root {
   --primary: #dddddd;
   --secondary: #ffffff;
-  --background: #111111;
+  --background: #222222;
   --syntax-background: #1d1d1d;
   --syntax-red: #f92672;
   --syntax-green: #a6e22e;
@@ -38,7 +38,7 @@
 [theme="light"] {
   --primary: #333333;
   --secondary: #000000;
-  --background: #ffffff;
+  --background: #eeeeee;
   --syntax-background: #f4f4f4;
   --syntax-red: #f9005a;
   --syntax-green: #8eca16;
@@ -65,6 +65,11 @@ body {
 .post-date {
   margin-top: 0px;
   font-size: small;
+}
+
+.post-body {
+  line-height: 1.8;
+  font-size: larger;
 }
 
 img {
@@ -103,18 +108,18 @@ pre.highlight {
 }
 
 /* stick footer to bottom of page */
-#page-container {
+#wrapper {
+  min-height: 100%;
   position: relative;
-  min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 1.5rem;
 }
 
 #footer {
   position: absolute;
-  bottom: 15;
+  bottom: 1.5rem;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 1.5rem;
 }

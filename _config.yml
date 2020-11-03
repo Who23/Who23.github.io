@@ -1,2 +1,3 @@
 theme: null
 highlighter: rouge
+exclude: ['drafts']

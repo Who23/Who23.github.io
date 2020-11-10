@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/monokai.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+  <p class="nav">
+    <a href="/">posts</a>
+    <a href="/about">about</a>
+    <a id="theme-toggle">🌙</a>
+  </p>
+</header>
+<script>
+  function dark() {
+    document.documentElement.setAttribute('theme', 'dark');
+    document.getElementById("theme-toggle").textContent = "🌙"
+    window.localStorage.setItem('theme', 'dark')
+  }
+
+  function light() {
+    document.documentElement.setAttribute('theme', 'light');
+    document.getElementById("theme-toggle").textContent = "🌟"
+    window.localStorage.setItem('theme', 'light')
+  }
+
+  if (window.localStorage.getItem("theme") == "light") {
+    light()
+  } else {
+    dark()
+  }
+
+  function switchTheme(e) {
+    if (document.documentElement.getAttribute('theme') == "light") {
+      dark()
+    } else {
+      light()
+    }
+  }
+
+  document.getElementById('theme-toggle').addEventListener('click', switchTheme);
+</script>
+      <div class="container-lg px-3 my-5 markdown-body" id="content-wrap">
+        <h1 class="post-title">Organization</h1>
+<p class="post-date">Nov 10th, 2020</p>
+<div class="post-body">
+<p>I’ve been thinking a lot more about organization and productivity this summer, much more than I have in a while. Obviously, COVID was a pretty big reason for this because I have so much more free time, not only to actually do stuff but think about how I could be more productive doing that stuff. I’m writing this post in order to collect and share both my thoughts and the way I’m working right now.</p>
+
+<p>I already spent some time thinking about organization a few years ago, when I realized that I couldn’t remember all of my assignments from school. I did write <em>some</em> stuff down, in a little planner, but I found that moving due dates around when something changed or adding notes about the details on an assignment was annoying on a piece of paper, so it didn’t happen often.</p>
+
+<p>Instead, I just tried to <em>remember</em> due dates. This lead to me listing each of my classes and their assignments out loud, for five or ten minutes every day. And besides just remembering the assignments, I had to think about more meta stuff. Were there multiple parts to an assignment? I remembered that this was due on Tuesday, but was it this Tuesday or the next? Even if it is the next, should I still work on it today? How much of it should I do? Should I do anything today?</p>
+
+<p>Looking back on that, I have no idea how I was able to keep up with everything in my head in such a terrible way. It was probably the most inefficient and most unreliable way I could have of keeping track of my assignments. I was trying to both just remember things, which is always unreliable, and then operate on that information to decide what to do every day. I’d make the same decisions every day, because I forgot about when I decided I was going to work on my english report yesterday.</p>
+
+<p>I eventually realized how bad it was, and set up multiple calendars to lift the load of keeping track of homework, which I still use today. There’s a seperate calendar for each class with it’s own color for distinctiveness. Each assignment is an all day event on the day it’s <em>due</em>. Usually, if an assignment can be done in a single sitting or is due in the close future, then that’s it. But, if it’s something that can take multiple sittings, or I want to pace myself a litle more, then there will be mini “check in” events between now and the due date, reminding me to work on it. I also put in important events like tests or appointments with teachers in there.</p>
+
+<p>It solves basically all the problems I had:</p>
+<ul>
+  <li>I don’t need to remember due dates. If I want to see the due dates for an assignment, I can look for it in its class calendar, or just on the calendar.</li>
+  <li>I can easily add any notes, details, files, links, etc. to the assignment. Usually I just add a bit of description text to the assignment to clarify what I need to do.</li>
+  <li>I don’t have to think about what I should/should not be doing. I think about all of that ahead of time and put the due dates and “check in” events in the calendar. If I want to know what I wanted to complete by today, I just have to look at what’s due tomorrow.</li>
+  <li>I can change due dates just by dragging events around!</li>
+</ul>
+
+<p>It also has some additional benefits:</p>
+<ul>
+  <li>I can get a pretty good preview of how much work I have each day just by looking at how many events are due the next day</li>
+  <li>Because I use the custom two week view on my calendar, I’m passively reminded of things due this week and next week.</li>
+  <li>Some teachers will have their own calendars, which I can add for live updates to my homework tracker.</li>
+  <li>I can shift events around very easily, if I wasn’t able to finish everything or I feel like my workload is too high for a given day.</li>
+</ul>
+
+<p>Using calendars to keep track of <em>dates</em> (shocking) isn’t new, but I wanted to share how I use my calendar regardless.</p>
+
+<p>The calendar is how I keep track of homework. However, I also need to keep track of things outside of assignments. For that, I’ve started using Apple’s Reminders. It’s set up similar to my calendar, but to see the things I need to do on any day I look at the reminders due that day, instead of the next day. The only reason for this is the ‘Today’ view which Reminders has, to let you only see the reminders due that day.</p>
+
+<p>It also lets me put a widget on my screen that shows the number of things that are due today, which makes my tasks for the day a lot more visible and a lot less forgettable, which I find helps a lot. On top of that, it syncs across every device I have making it basically as portable as my assignment calendar.</p>
+
+<p>I have a few issues with the app though. I still don’t have a good way of separating things that have a deadline that’s a little far out. I do know about the scheduled view, but it’s very messy. Tasks that are late and not marked as done flow over into the next day’s ‘today’ view without changing the due date, so tasks are grouped differently in the today view and the scheduled view</p>
+
+<p>For now, I’m tagging things that <em>need</em> to be done that day with ‘low priority’ and not tagging things that I’d <em>like</em> to do, which are usually events that are farther out. Having them there reminds me that it’s due soon, and I can’t forget about it, but I don’t need to address it right now.</p>
+
+<p>Another big problem I have with the app is that  the ‘Today’ view doesn’t sort by priority which is very frustrating since I use the priority tags a lot, and I don’t understand why they don’t float to the top of the list.</p>
+
+<p>But, my use of the Reminders app is a pretty recent development, so when I get some time I’ll probably be messing around with other apps or maybe a calendar. It might integrate into my assignment calendars, so everything is in one place. I’m not sure yet, though.</p>
+
+<p>And that’s basically it - calendars and reminders. I just wanted to share my thoughts and what I’m doing right now. Bye!</p>
+
+
+</div>
+      </div>
+      <footer id="footer">
+  <p>
+    <a href="https://github.com/Who23">github</a>
+  </p>
+</footer>
+
+    <div>
+  </body>
+</html>

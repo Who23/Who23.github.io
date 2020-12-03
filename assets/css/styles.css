@@ -89,18 +89,33 @@ a {
 
 
 /* code box */
+pre {
+  overflow: auto;
+}
+
+pre.highlight {
+  padding: 20px;
+}
+pre.highlight {
+  padding: 20px;
+}
+
 .highlight {
   border-radius: 10px;
 }
 
 code {
   font-family: 'Fira Code';
-  font-size: 12;
+  font-size: medium;
 }
 
-pre.highlight {
-  padding: 20px;
+code.highlighter-rouge  {
+  background: var(--syntax-background);
+  color: var(--secondary);
+  padding: 4px;
+  border-radius: 5px;
 }
+
 
 /* navbar stufff */
 .nav {

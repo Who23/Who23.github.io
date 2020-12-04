@@ -9,11 +9,11 @@ $ echo "text!" > /dev/$PROTO/$HOST/$PORT
 ```
 And you'll create a connection to `HOST:PORT`. `$PROTO` can be `tcp` or `udp`. If the connection can't be made, writing to/reading the file will fail.
 
-Along with being easy to access from the terminal, it's *very* handy for scripts, especially if you don't have `nc`/`telnet`. For example, if a local build of a web app runs on port 8000, you can check if it's running with:
+Along with being easy to access from the terminal, it's *very* handy for scripts, especially if you don't have `nc`/`telnet`. For example, if a local build of a web app runs on port 8000, you can check if it's running with:[^1]
 
 ```bash
 #!/bin/bash
-if [ exec 1>/dev/null 2>/dev/null 3>/dev/tcp/localhost/8000 ] ; then
+if exec 3>/dev/tcp/localhost/8000 ; then
 	echo "server up!"
 else
 	echo "server down."
@@ -21,9 +21,9 @@ fi
 ```
 And then use that information somewhere else. 
 
-If you're unfamiliar, `exec` is used here to create the file to write to (>), with file descriptor 3 referring to it and thus the connection. 
+If you're unfamiliar, `exec` without any arguments is used to redirect file descriptors and files. By associating fd 3 with `/dev/tcp/localhost/4000`, it attempts to create a file there and thus a connection. We use `>` to open the socket for writing, although we don't need to write anything in this case.
 
-We can use `exec` to create a connection we can read *and* write to with `<>`, and create a super simple curl:
+By using `<>` we can open a file for reading and writing, and use it to create a super simple curl:
 ```bash
 #!/bin/bash
 exec 3<>/dev/tcp/"$1"/80
@@ -82,3 +82,6 @@ read -r line <&$talkfd; print -r - $line
 Again, there's a lot more you can do, especially with the ability to listen for connections.
 
 Hope this was as interesting to you as it was to me!
+
+---
+[^1]: Thanks to u/barubary for pointing out why the previous version of this code was wrong!

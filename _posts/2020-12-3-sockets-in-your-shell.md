@@ -13,7 +13,7 @@ Along with being easy to access from the terminal, it's *very* handy for scripts
 
 ```bash
 #!/bin/bash
-if exec 3>/dev/tcp/localhost/4000 ; then
+if exec 3>/dev/tcp/localhost/8000 ; then
 	echo "server up!"
 else
 	echo "server down."
